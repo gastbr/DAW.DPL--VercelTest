@@ -81,7 +81,18 @@ import projectsBoardCollisionSource from '../models/projects/board/collision.glb
 import projectsBoardStructureFloorShadowSource from '../models/projects/board/floorShadow.png'
 import projectsBoardPlaneSource from '../models/projects/board/plane.glb'
 
+<<<<<<< HEAD
 import projectsSocialDevFloorSource from '../models/projects/socialDev/floorTexture.png'
+=======
+import projectsDistinctionsAwwwardsBaseSource from '../models/projects/distinctions/awwwards/base.glb'
+import projectsDistinctionsAwwwardsCollisionSource from '../models/projects/distinctions/awwwards/collision.glb'
+import projectsDistinctionsFWABaseSource from '../models/projects/distinctions/fwa/base.glb'
+import projectsDistinctionsFWACollisionSource from '../models/projects/distinctions/fwa/collision.glb'
+import projectsDistinctionsCSSDABaseSource from '../models/projects/distinctions/cssda/base.glb'
+import projectsDistinctionsCSSDACollisionSource from '../models/projects/distinctions/cssda/collision.glb'
+
+import projectsThreejsJourneyFloorSource from '../models/projects/threejsJourney/floorTexture.png'
+>>>>>>> 452ab55 (First commit)
 import projectsChartogneFloorSource from '../models/projects/chartogne/floorTexture.png'
 import projectsZenlyFloorSource from '../models/projects/zenly/floorTexture.png'
 import projectsCitrixRedbullFloorSource from '../models/projects/citrixRedbull/floorTexture.png'
@@ -92,12 +103,22 @@ import projectsKepplerFloorSource from '../models/projects/keppler/floorTexture.
 
 // Information
 import informationStaticBaseSource from '../models/information/static/base1.glb'
+<<<<<<< HEAD
 import informationStaticCollisionSource from '../models/information/static/collision1.glb'
 import informationStaticFloorShadowSource from '../models/information/static/floorShadow.png'
 
 import informationLemonBaseSource from '../models/lemon/base.glb'
 import informationLemonCollisionSource from '../models/lemon/collision.glb'
 
+=======
+import informationStaticCollisionSource from '../models/information/static/collision.glb'
+import informationStaticFloorShadowSource from '../models/information/static/floorShadow.png'
+
+import informationBaguetteBaseSource from '../models/information/baguette/base.glb'
+import informationBaguetteCollisionSource from '../models/information/baguette/collision.glb'
+
+import informationContactTwitterLabelSource from '../models/information/static/contactTwitterLabel.png'
+>>>>>>> 452ab55 (First commit)
 import informationContactGithubLabelSource from '../models/information/static/contactGithubLabel.png'
 import informationContactLinkedinLabelSource from '../models/information/static/contactLinkedinLabel.png'
 import informationContactMailLabelSource from '../models/information/static/contactMailLabel.png'
@@ -117,6 +138,36 @@ import brickCollisionSource from '../models/brick/collision.glb'
 import hornBaseSource from '../models/horn/base.glb'
 import hornCollisionSource from '../models/horn/collision.glb'
 
+<<<<<<< HEAD
+=======
+// // Distinction A
+// import distinctionAStaticFloorShadowSource from '../models/distinctionA/static/floorShadow.png'
+// import distinctionAStaticBaseSource from '../models/distinctionA/static/base.glb'
+// import distinctionAStaticCollisionSource from '../models/distinctionA/static/collision.glb'
+
+// // Distinction B
+// import distinctionBStaticFloorShadowSource from '../models/distinctionB/static/floorShadow.png'
+// import distinctionBStaticBaseSource from '../models/distinctionB/static/base.glb'
+// import distinctionBStaticCollisionSource from '../models/distinctionB/static/collision.glb'
+
+// // Distinction C
+// import distinctionCStaticFloorShadowSource from '../models/distinctionC/static/floorShadow.png'
+// import distinctionCStaticBaseSource from '../models/distinctionC/static/base.glb'
+// import distinctionCStaticCollisionSource from '../models/distinctionC/static/collision.glb'
+
+// // Cone
+// import coneBaseSource from '../models/cone/base.glb'
+// import coneCollisionSource from '../models/cone/collision.glb'
+
+// // Awwwards trophy
+// import awwwardsTrophyBaseSource from '../models/awwwardsTrophy/base.glb'
+// import awwwardsTrophyCollisionSource from '../models/awwwardsTrophy/collision.glb'
+
+// Awwwards trophy
+import webbyTrophyBaseSource from '../models/webbyTrophy/base.glb'
+import webbyTrophyCollisionSource from '../models/webbyTrophy/collision.glb'
+
+>>>>>>> 452ab55 (First commit)
 // Lemon
 import lemonBaseSource from '../models/lemon/base.glb'
 import lemonCollisionSource from '../models/lemon/collision.glb'
@@ -250,7 +301,18 @@ export default class Resources extends EventEmitter
             { name: 'projectsBoardStructureFloorShadow', source: projectsBoardStructureFloorShadowSource, type: 'texture' },
             { name: 'projectsBoardPlane', source: projectsBoardPlaneSource },
 
+<<<<<<< HEAD
             { name: 'projectsSocialDevFloor', source: projectsSocialDevFloorSource, type: 'texture' },
+=======
+            { name: 'projectsDistinctionsAwwwardsBase', source: projectsDistinctionsAwwwardsBaseSource },
+            { name: 'projectsDistinctionsAwwwardsCollision', source: projectsDistinctionsAwwwardsCollisionSource },
+            { name: 'projectsDistinctionsFWABase', source: projectsDistinctionsFWABaseSource },
+            { name: 'projectsDistinctionsFWACollision', source: projectsDistinctionsFWACollisionSource },
+            { name: 'projectsDistinctionsCSSDABase', source: projectsDistinctionsCSSDABaseSource },
+            { name: 'projectsDistinctionsCSSDACollision', source: projectsDistinctionsCSSDACollisionSource },
+
+            { name: 'projectsThreejsJourneyFloor', source: projectsThreejsJourneyFloorSource, type: 'texture' },
+>>>>>>> 452ab55 (First commit)
             { name: 'projectsChartogneFloor', source: projectsChartogneFloorSource, type: 'texture' },
             { name: 'projectsZenlyFloor', source: projectsZenlyFloorSource, type: 'texture' },
             { name: 'projectsCitrixRedbullFloor', source: projectsCitrixRedbullFloorSource, type: 'texture' },
@@ -264,9 +326,16 @@ export default class Resources extends EventEmitter
             { name: 'informationStaticCollision', source: informationStaticCollisionSource },
             { name: 'informationStaticFloorShadow', source: informationStaticFloorShadowSource, type: 'texture' },
 
+<<<<<<< HEAD
             { name: 'informationLemonBase', source: informationLemonBaseSource },
             { name: 'informationLemonCollision', source: informationLemonCollisionSource },
 
+=======
+            { name: 'informationBaguetteBase', source: informationBaguetteBaseSource },
+            { name: 'informationBaguetteCollision', source: informationBaguetteCollisionSource },
+
+            { name: 'informationContactTwitterLabel', source: informationContactTwitterLabelSource, type: 'texture' },
+>>>>>>> 452ab55 (First commit)
             { name: 'informationContactGithubLabel', source: informationContactGithubLabelSource, type: 'texture' },
             { name: 'informationContactLinkedinLabel', source: informationContactLinkedinLabelSource, type: 'texture' },
             { name: 'informationContactMailLabel', source: informationContactMailLabelSource, type: 'texture' },
@@ -286,10 +355,39 @@ export default class Resources extends EventEmitter
             { name: 'hornBase', source: hornBaseSource },
             { name: 'hornCollision', source: hornCollisionSource },
 
+<<<<<<< HEAD
+=======
+            // // Distinction A
+            // { name: 'distinctionAStaticBase', source: distinctionAStaticBaseSource },
+            // { name: 'distinctionAStaticCollision', source: distinctionAStaticCollisionSource },
+            // { name: 'distinctionAStaticFloorShadow', source: distinctionAStaticFloorShadowSource, type: 'texture' },
+
+            // // Distinction B
+            // { name: 'distinctionBStaticBase', source: distinctionBStaticBaseSource },
+            // { name: 'distinctionBStaticCollision', source: distinctionBStaticCollisionSource },
+            // { name: 'distinctionBStaticFloorShadow', source: distinctionBStaticFloorShadowSource, type: 'texture' },
+
+            // // Distinction C
+            // { name: 'distinctionCStaticBase', source: distinctionCStaticBaseSource },
+            // { name: 'distinctionCStaticCollision', source: distinctionCStaticCollisionSource },
+            // { name: 'distinctionCStaticFloorShadow', source: distinctionCStaticFloorShadowSource, type: 'texture' },
+
+>>>>>>> 452ab55 (First commit)
             // // Cone
             // { name: 'coneBase', source: coneBaseSource },
             // { name: 'coneCollision', source: coneCollisionSource },
 
+<<<<<<< HEAD
+=======
+            // // Awwwards trophy
+            // { name: 'awwwardsTrophyBase', source: awwwardsTrophyBaseSource },
+            // { name: 'awwwardsTrophyCollision', source: awwwardsTrophyCollisionSource },
+
+            // Webby trophy
+            { name: 'webbyTrophyBase', source: webbyTrophyBaseSource },
+            { name: 'webbyTrophyCollision', source: webbyTrophyCollisionSource },
+
+>>>>>>> 452ab55 (First commit)
             // Lemon
             { name: 'lemonBase', source: lemonBaseSource },
             { name: 'lemonCollision', source: lemonCollisionSource },

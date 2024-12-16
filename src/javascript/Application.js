@@ -40,11 +40,19 @@ export default class Application
     /**
      * Set config
      */
+<<<<<<< HEAD
     setConfig() 
     {
         this.config = {}
         this.config.debug = window.location.hash === '#debug'
         this.config.cyberTruck = true
+=======
+    setConfig()
+    {
+        this.config = {}
+        this.config.debug = window.location.hash === '#debug'
+        this.config.cyberTruck = window.location.hash === '#cybertruck'
+>>>>>>> 452ab55 (First commit)
         this.config.touch = false
 
         window.addEventListener('touchstart', () =>

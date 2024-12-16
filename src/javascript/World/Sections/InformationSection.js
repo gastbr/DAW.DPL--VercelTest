@@ -19,7 +19,11 @@ export default class InformationSection
         this.container.matrixAutoUpdate = false
 
         this.setStatic()
+<<<<<<< HEAD
         this.setLemon()
+=======
+        this.setBaguettes()
+>>>>>>> 452ab55 (First commit)
         this.setLinks()
         this.setActivities()
         this.setTiles()
@@ -36,6 +40,7 @@ export default class InformationSection
         })
     }
 
+<<<<<<< HEAD
     setLemon()
     {
         this.lemons = {}
@@ -48,11 +53,40 @@ export default class InformationSection
             collision: this.resources.items.informationLemonCollision.scene,
             offset: new THREE.Vector3(this.x + this.lemons.x + 0.3, this.y + this.lemons.y - 0.666, 0.5),
             rotation: new THREE.Euler(0, -0.8, - Math.PI * 37 / 180),
+=======
+    setBaguettes()
+    {
+        this.baguettes = {}
+
+        this.baguettes.x = - 4
+        this.baguettes.y = 6
+
+        this.baguettes.a = this.objects.add({
+            base: this.resources.items.informationBaguetteBase.scene,
+            collision: this.resources.items.informationBaguetteCollision.scene,
+            offset: new THREE.Vector3(this.x + this.baguettes.x - 0.56, this.y + this.baguettes.y - 0.666, 0.2),
+            rotation: new THREE.Euler(0, 0, - Math.PI * 37 / 180),
+>>>>>>> 452ab55 (First commit)
             duplicated: true,
             shadow: { sizeX: 0.6, sizeY: 3.5, offsetZ: - 0.15, alpha: 0.35 },
             mass: 1.5,
             // soundName: 'woodHit'
         })
+<<<<<<< HEAD
+=======
+
+        this.baguettes.b = this.objects.add({
+            base: this.resources.items.informationBaguetteBase.scene,
+            collision: this.resources.items.informationBaguetteCollision.scene,
+            offset: new THREE.Vector3(this.x + this.baguettes.x - 0.8, this.y + this.baguettes.y - 2, 0.5),
+            rotation: new THREE.Euler(0, - 0.5, Math.PI * 60 / 180),
+            duplicated: true,
+            shadow: { sizeX: 0.6, sizeY: 3.5, offsetZ: - 0.15, alpha: 0.35 },
+            mass: 1.5,
+            sleep: false,
+            // soundName: 'woodHit'
+        })
+>>>>>>> 452ab55 (First commit)
     }
 
     setLinks()
@@ -77,6 +111,7 @@ export default class InformationSection
         // Options
         this.links.options = [
             {
+<<<<<<< HEAD
                 href: 'https://github.com/lebinh190998',
                 labelTexture: this.resources.items.informationContactGithubLabelTexture
             },
@@ -86,6 +121,21 @@ export default class InformationSection
             },
             {
                 href: 'mailto:lebinh190998@gmail.com',
+=======
+                href: 'https://twitter.com/bruno_simon/',
+                labelTexture: this.resources.items.informationContactTwitterLabelTexture
+            },
+            {
+                href: 'https://github.com/brunosimon/',
+                labelTexture: this.resources.items.informationContactGithubLabelTexture
+            },
+            {
+                href: 'https://www.linkedin.com/in/simonbruno77/',
+                labelTexture: this.resources.items.informationContactLinkedinLabelTexture
+            },
+            {
+                href: 'mailto:simon.bruno.77@gmail.com',
+>>>>>>> 452ab55 (First commit)
                 labelTexture: this.resources.items.informationContactMailLabelTexture
             }
         ]
