@@ -2,14 +2,6 @@ import * as THREE from 'three'
 import Project from './Project'
 import TweenLite from 'gsap/TweenLite'
 
-<<<<<<< HEAD
-import projectsSocialDevSlideASources from '../../../models/projects/socialDev/slideA.png'
-import projectsSocialDevSlideBSources from '../../../models/projects/socialDev/slideB.png'
-import projectsSocialDevSlideCSources from '../../../models/projects/socialDev/slideC.png'
-
-import projectsChartogneSlideASources from '../../../models/projects/chartogne/slideA.png'
-import projectsChartogneSlideBSources from '../../../models/projects/chartogne/slideB.png'
-=======
 import projectsThreejsJourneySlideASources from '../../../models/projects/threejsJourney/slideA.jpg'
 import projectsThreejsJourneySlideBSources from '../../../models/projects/threejsJourney/slideB.jpg'
 import projectsThreejsJourneySlideCSources from '../../../models/projects/threejsJourney/slideC.jpg'
@@ -43,12 +35,9 @@ import projectsGleecChatSlideDSources from '../../../models/projects/gleecChat/s
 import projectsKepplerSlideASources from '../../../models/projects/keppler/slideA.jpg'
 import projectsKepplerSlideBSources from '../../../models/projects/keppler/slideB.jpg'
 import projectsKepplerSlideCSources from '../../../models/projects/keppler/slideC.jpg'
->>>>>>> 452ab55 (First commit)
 
-export default class ProjectsSection
-{
-    constructor(_options)
-    {
+export default class ProjectsSection {
+    constructor(_options) {
         // Options
         this.time = _options.time
         this.resources = _options.resources
@@ -63,8 +52,7 @@ export default class ProjectsSection
         this.y = _options.y
 
         // Debug
-        if(this.debug)
-        {
+        if (this.debug) {
             this.debugFolder = this.debug.addFolder('projects')
             this.debugFolder.open()
         }
@@ -86,20 +74,17 @@ export default class ProjectsSection
         this.setZone()
 
         // Add all project from the list
-        for(const _options of this.list)
-        {
+        for (const _options of this.list) {
             this.add(_options)
         }
     }
 
-    setGeometries()
-    {
+    setGeometries() {
         this.geometries = {}
         this.geometries.floor = new THREE.PlaneBufferGeometry(16, 8)
     }
 
-    setMeshes()
-    {
+    setMeshes() {
         this.meshes = {}
 
         // this.meshes.boardStructure = this.objects.getConvertedMesh(this.resources.items.projectsBoardStructure.scene.children, { floorShadowTexture: this.resources.items.projectsBoardStructureFloorShadowTexture })
@@ -110,23 +95,9 @@ export default class ProjectsSection
         this.meshes.areaLabel.matrixAutoUpdate = false
     }
 
-    setList()
-    {
+    setList() {
         this.list = [
             {
-<<<<<<< HEAD
-                name: 'SocialDev',
-                imageSources:
-                [
-                    projectsSocialDevSlideASources,
-                    projectsSocialDevSlideBSources,
-                    projectsSocialDevSlideCSources,
-                ],
-                floorTexture: this.resources.items.projectsSocialDevFloorTexture,
-                link:
-                {
-                    href: 'https://secure-badlands-38958.herokuapp.com/',
-=======
                 name: 'Three.js Journey',
                 imageSources:
                 [
@@ -139,7 +110,6 @@ export default class ProjectsSection
                 link:
                 {
                     href: 'https://threejs-journey.xyz',
->>>>>>> 452ab55 (First commit)
                     x: - 4.8,
                     y: - 3,
                     halfExtents:
@@ -147,12 +117,6 @@ export default class ProjectsSection
                         x: 3.2,
                         y: 1.5
                     }
-<<<<<<< HEAD
-                }
-            },
-            {
-                name: 'Food2Fork',
-=======
                 },
                 distinctions:
                 [
@@ -161,24 +125,16 @@ export default class ProjectsSection
             },
             {
                 name: 'Chartogne Taillet',
->>>>>>> 452ab55 (First commit)
                 imageSources:
-                [
-                    projectsChartogneSlideASources,
-                    projectsChartogneSlideBSources,
-<<<<<<< HEAD
-=======
+                    [
+                        projectsChartogneSlideASources,
+                        projectsChartogneSlideBSources,
                     projectsChartogneSlideCSources
->>>>>>> 452ab55 (First commit)
-                ],
-                floorTexture: this.resources.items.projectsChartogneFloorTexture,
+                    ],
+                floorTexture: this.resources.items.projectsFood2ForkFloorTexture,
                 link:
                 {
-<<<<<<< HEAD
-                    href: 'https://github.com/lebinh190998/Food2Fork',
-=======
                     href: 'https://chartogne-taillet.com',
->>>>>>> 452ab55 (First commit)
                     x: - 4.8,
                     y: - 3.3,
                     halfExtents:
@@ -186,10 +142,6 @@ export default class ProjectsSection
                         x: 3.2,
                         y: 1.5
                     }
-<<<<<<< HEAD
-                }
-            },
-=======
                 },
                 distinctions:
                 [
@@ -356,12 +308,10 @@ export default class ProjectsSection
                 },
                 distinctions: []
             }
->>>>>>> 452ab55 (First commit)
         ]
     }
 
-    setZone()
-    {
+    setZone() {
         const totalWidth = this.list.length * (this.interDistance / 2)
 
         const zone = this.zones.add({
@@ -370,27 +320,23 @@ export default class ProjectsSection
             data: { cameraAngle: 'projects' }
         })
 
-        zone.on('in', (_data) =>
-        {
+        zone.on('in', (_data) => {
             this.camera.angle.set(_data.cameraAngle)
             TweenLite.to(this.passes.horizontalBlurPass.material.uniforms.uStrength.value, 2, { x: 0 })
             TweenLite.to(this.passes.verticalBlurPass.material.uniforms.uStrength.value, 2, { y: 0 })
         })
 
-        zone.on('out', () =>
-        {
+        zone.on('out', () => {
             this.camera.angle.set('default')
             TweenLite.to(this.passes.horizontalBlurPass.material.uniforms.uStrength.value, 2, { x: this.passes.horizontalBlurPass.strength })
             TweenLite.to(this.passes.verticalBlurPass.material.uniforms.uStrength.value, 2, { y: this.passes.verticalBlurPass.strength })
         })
     }
 
-    add(_options)
-    {
+    add(_options) {
         const x = this.x + this.items.length * this.interDistance
         let y = this.y
-        if(this.items.length > 0)
-        {
+        if (this.items.length > 0) {
             y += (Math.random() - 0.5) * this.positionRandomess
         }
 
@@ -411,8 +357,7 @@ export default class ProjectsSection
         this.container.add(project.container)
 
         // Add tiles
-        if(this.items.length >= 1)
-        {
+        if (this.items.length >= 1) {
             const previousProject = this.items[this.items.length - 1]
             const start = new THREE.Vector2(previousProject.x + this.projectHalfWidth, previousProject.y)
             const end = new THREE.Vector2(project.x - this.projectHalfWidth, project.y)

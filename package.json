@@ -10,16 +10,6 @@
   },
   "repository": {
     "type": "git",
-<<<<<<< HEAD
-    "url": "git+https://github.com/lebinh190998/porfolio.git"
-  },
-  "author": "lebinh",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/lebinh190998/porfolio/issues"
-  },
-  "homepage": "https://github.com/lebinh190998/porfolio#readme",
-=======
     "url": "git+https://github.com/brunosimon/three.js-template.git"
   },
   "author": "brunosimon",
@@ -28,7 +18,6 @@
     "url": "https://github.com/brunosimon/three.js-template/issues"
   },
   "homepage": "https://github.com/brunosimon/three.js-template#readme",
->>>>>>> 452ab55 (First commit)
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
