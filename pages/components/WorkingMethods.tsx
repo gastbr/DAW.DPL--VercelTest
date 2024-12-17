@@ -3,28 +3,16 @@ const WorkingMethods = () => {
     <section className="px-5 md:px-20 lg:px-30">
       <div className="mt-20 text-center max-w-3xl mx-auto">
         <h3 className="text-3xl text-neutral-200 font-medium ">
-          Työskentelytavat
+          Working Methods
         </h3>
         <p className="text-md py-5 leading-6 text-neutral-400 text-left">
-          Tykkään aloittaa projektit nollasta ja tehdä niistä oman näköisiä.
-          Tämä tapa on opettanut parhaiten oppimaan asioita, kun niitä joutuu
-          oikeasti miettimään ajatuksella. Ajatusprosessini yleensä menee niin,
-          että mietin ongelmaa ensin päässä. Sitten kun saan idean niin
-          kirjoitan sen koodiksi ja testailen sitä niin kauan että se alkaa
-          toimia halutullani tavalla. Haasteita on riittänyt vuoden aikana
-          paljon, mutta kertaakaan luovuttaminen ei ole käynyt mielessä.
+          I enjoy starting projects from scratch and making them my own. This method has taught me the most because I have to truly think through the problems. My thought process usually starts with mentally analyzing the problem. Once I have an idea, I translate it into code and test it until it works the way I want. There have been many challenges throughout the year, but giving up has never crossed my mind.
           <br />
           <br />
-          Projekteissa käytän paljon versiohallintaa <b>(Git)</b>. Tässä vuoden
-          aikana on tullu nähtyä kuinka hyödyllinen Git oikeasti on ja se on
-          pelastanut projektini useasti.
+          I use version control a lot in my projects, especially <b>(Git)</b>. Over the past year, I've seen just how useful Git really is, and it has saved my projects multiple times.
         </p>
         <p className="text-md py-5 leading-6 text-neutral-400 text-left">
-          Pidän erityisesti ryhmä/paritöistä, koska niissä saa keskustella,
-          pohtia ja jakaa omia mielipiteitä jonkun kanssa. Pidän myös siitä,
-          että minulle annetaan rakentavaa palautetta ja haluan tuoda omat
-          näkemykseni ja mielipiteeni esiin. Meillä on koulussa paljon
-          ryhmätöitä, minkä näen isona plussana.
+          I particularly enjoy working in groups or pairs because it allows for discussions, brainstorming, and sharing opinions. I also value receiving constructive feedback and enjoy presenting my own views and ideas. At school, we often work on group projects, which I see as a big advantage.
         </p>
       </div>
       <hr
